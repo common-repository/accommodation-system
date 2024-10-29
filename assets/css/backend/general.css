@@ -1,0 +1,506 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 9, 2019, 11:42:53 AM
+    Author     : dop-mac1
+*/
+
+.main-header{
+    margin-left: -20px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 8px 0 rgba(85,93,102,.3);
+    position: sticky;
+    top: 25px;
+    display: flex;
+    z-index: 1001;
+    width: auto;
+}
+
+.main-header-title{
+    padding: 20px;
+    width: 20%;
+}
+.main-header-title-span{
+    font-family: sans-serif;
+    font-size: 28px;
+    color: #ffffff;
+    background-color: #ffffff;
+    padding: 24px;
+}
+
+.main-header-menu{
+    float: right;
+    width: 80%;
+}
+
+.main-menu{
+    float: right;
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    .main-menu{
+        float: left;
+        display: grid;
+        width: 100%;
+    }
+
+    .main-header{
+        margin-left: -20px;
+        background-color: #ffffff;
+        box-shadow: 0 8px 8px 0 rgba(85,93,102,.3);
+        position: static;
+        top: 25px;
+        display: flex;
+        z-index: 1001;
+        width: auto;
+    }
+
+    .main-header-menu{
+        float: right;
+        width: 100%;
+    }
+
+    .main-header-title{
+        display: none;
+    }
+}
+.main-menu a{
+    text-decoration: none !important;
+}
+.main-menu a:focus{
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.main-header-menu-title{
+    padding: 25px 30px 25px 30px;
+    background-color: #e18b25;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.main-header-menu-title:hover{
+    background-color: #dd4601e3;
+}
+.main-header-menu-title:focus{
+    outline: 0 !important;
+    box-shadow: none;
+}
+.main-body-section{
+    padding: 20px;
+    color: #5c5b5b;
+    background-color: #ffffff;
+    border: solid 1px #e28a25;
+    font-style: italic;
+    display: flex;
+}
+
+@media screen and (max-width: 600px){
+    .main-body-section{
+        padding: 20px;
+        color: #5c5b5b;
+        background-color: #ffffff;
+        border: solid 1px #e28a25;
+        font-style: italic;
+        display: flex;
+    }
+}
+
+.main-body-section h3{
+    width: 50%;
+    padding: 5px;
+}
+
+.main-body-section .col-md-6{
+    display: flex;
+}
+
+.main-ajax-response{
+    margin: 20px 0 0 0 ;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 600px){
+    .main-ajax-response{
+        margin-top: 20px;
+        background-color: #ffffff;
+    }
+}
+
+
+.has-button-default{
+    background-color: #e28a25;
+    color: #fff;
+    border: solid #efc497;
+    font-size: 13px;
+    margin-right: 4px;
+    transition: 0.5s
+}
+
+.has-button-default:hover{
+    background-color: #e15c24;
+}
+
+.row-sidebar {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 20%;
+}
+
+@media screen and (max-width: 600px){
+    .row-sidebar {
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+}
+
+
+.tabs{
+	margin: 30px 0px;
+	font-size: 18px;
+	font-family: poppins;
+}
+.tab_active{
+	float: left;
+	padding: 15px 30px;
+	border-bottom: 1px solid #5867dd;
+}
+.tab_inactive{
+	float: left;
+	padding: 15px 30px;
+	border-bottom: 1px solid #ccc;
+}
+.tab_active a{
+	color: #5867dd;
+	text-decoration: none !important;
+}
+.tab_active a:hover{
+	color: #5867dd;
+	text-decoration: none !important;
+}
+.tab_active a:focus{
+	box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8);
+	outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+.tab_inactive a{
+	color: #7b7e8a;
+	text-decoration: none !important;
+}
+.tab_inactive a:focus{
+	box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8);
+	outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+input[type=text]{
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.07);
+}
+
+#booking_list_holder table{
+    max-height: 450px;
+    overflow-y: scroll;
+    display: table;
+}
+
+#booking_list_holder .reservation_status1{
+    color: #0062cc;
+}
+
+#booking_list_holder .reservation_status2{
+    color: #43bb40;
+}
+
+#booking_list_holder table th{
+    border: solid 1px #ccc;
+}
+
+.nav-item a:focus{
+	box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8);
+	outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+button:focus{
+	box-shadow: 0 0 0 0px #5b9dd9, 0 0 0px 0px rgba(30,140,190,.8);
+	outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+.bs-component{
+    display: flex;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .bs-component{
+        display: grid;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 992px){
+.col-md-offset-2 {
+    margin-left: 1% !important;
+    }
+}
+
+/*
+    datepicker ui change
+*/
+
+.ui-datepicker.ui-widget.ui-widget-content {
+    border-color: #c5c5c5;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 5px;
+    width: auto;
+    padding: 10px;
+	max-width: 380px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    border-radius: 0;
+    background: transparent;
+    border-color: transparent;
+    padding: 15px;
+}
+
+.ui-datepicker .ui-datepicker-header a {
+    border-radius: 50%;
+    text-align: center;
+    color: #777;
+    cursor: pointer;
+    top: 17px;
+    top: 9px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #c5c5c5;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.ui-datepicker .ui-datepicker-header a:hover {
+    border-radius: 0;
+    text-align: center;
+    background: #c5c5c5;
+    border-color: #c5c5c5;
+    border-radius: 50%;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next-hover {
+    top: 9px;
+    right:2px;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev-hover {
+    top: 9px;
+    left:2px;
+}
+.ui-datepicker .ui-datepicker-header a span {
+    background: none;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-indent: 1px;
+    font-size: 24px;
+    height: 20px;
+    width: 18px;
+    margin-left: -9px;
+    margin-top: -10px;
+}
+
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev span:before {
+    content: "\f104";
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+    left: 3px;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next span:before {
+    content: "\f105";
+    margin-right: 10px;
+    position: relative;
+    left: 5px;
+    top: -3px;
+}
+.ui-datepicker .ui-datepicker-header .ui-datepicker-title {
+    color: #000;
+}
+.ui-widget-content .ui-state-default{
+    border-color: transparent;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50px;
+	padding: 0;
+	
+}
+.ui-widget-content .ui-state-default.ui-state-active{
+    background-color:  #f1f4f7;
+}
+.ui-widget-content .ui-state-default:hover{
+    border-color: #ddd;
+
+}
+.ui-datepicker table,
+.ui-datepicker thead,
+.ui-datepicker tbody,
+.ui-datepicker tfoot,
+.ui-datepicker tr,
+.ui-datepicker th,
+.ui-datepicker td{
+	border:0;
+	background:transparent;
+}
+.ui-datepicker table{
+	margin: .5em 0 .4em;
+}
+.ui-datepicker thead{
+    border-bottom: 1px solid #e8e8e8;
+}
+.ui-datepicker td{
+    padding: 3px;
+}
+.ui-datepicker th{
+    color: #777;
+    font-weight: normal;
+}
+
+
+
+/* BOOTSTRAP */
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (max-width: 600px){
+    .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+   .col-md-6 {
+    width: 50%;
+  }
+   #booking_detail_top{
+       position: sticky;
+       top: 110px;
+   }
+}
+.form-group {
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+.preloader {
+    display:    none;
+    z-index:    10000 !important;
+    top:        0;
+    left:       0;
+    height:     100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                50% 50% 
+                no-repeat;
+    white-space: nowrap;
+    text-align: center;
+    margin: 1em 0;
+    width: 20%;
+}
+
+.preloader img{
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    max-height: 25px;
+    max-width: 160px;    
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+.main-header .loading .preloader {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+.main-header .loading .preloader {
+    display: block;
+}
+
+.preloader-helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.container-items{
+     display: flex;
+ }
+@media screen and (max-width: 600px){
+    .container-items{
+        display: grid;
+    }
+}
+
+.container-item{
+    padding: 25px;
+    background-color: #e28a25;
+    color: #ffffff;
+    margin: 5px;
+    text-align: center;
+    width: 25%;
+}
+@media screen and (max-width: 600px){
+    .container-item{
+        width: 100%;
+    }
+}
+
+.container-item-name{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.container-item-type{
+    font-size: 16px;
+    padding: 10px;
+    font-style: italic;
+}
+.container-item-floor{
+    font-size: 16px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.container-item-image img{
+    height: 70px;
+    width: 150px;
+    padding: 10px;
+}
+

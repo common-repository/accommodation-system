@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .section-main{
+            padding: 35px;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px 1px #dbdbdb !important;
+        }
+
+        .section-title{
+            padding: 35px;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px 1px #dbdbdb !important;
+            border: 1px solid #e18b25;
+        }
+        .section-title span{
+            font-size: 18px;
+        }
+        .content{
+            border-left:1px solid #e18b25;
+            border-right:1px solid #e18b25;
+            border-bottom:1px solid #e18b25;
+        }
+        .section{
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 1px 1px 10px 1px #dbdbdb !important;
+        }
+        span{
+            margin-bottom: 0;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            color: #e18b25;
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 14px;
+            opacity: 0.6;
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #545353;
+        }
+        .item{
+            color: #e18b25;
+            font-size: 14px;
+        }
+        .timestamp{
+            color: #4CAF50;
+            width: 150px;
+            font-style: normal;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>New booking! Booking ID {{ id }}. See details below !</title>
+</head>
+<body>
+<div class="section-main">
+    <div class="section-title">
+        <span>New booking! Booking ID {{ id }}. See details below !</span><br>
+    </div>
+    <div class="content">
+        <div class="section">
+            <div class="customer_info_title">
+                <span>Customer details</span><br>
+            </div>
+            <div class="customer_info_body">
+                <p>Name <span class="item"> {{ name }}</span></p>
+                <p>Email <span class="item"> {{ email }}</span>  Phone <span class="item"> {{ phone }}</span></p>
+                <p>Address <span class="item"> {{ address }}</span></p><br>
+            </div>
+        </div>
+        <div class="section">
+            <div class="booking_info_title">
+                <span>Booking details</span><br>
+            </div>
+            <div class="booking_info_body">
+                <p>ID <span class="item"> {{ id }}</span></p>
+                <p>Check-in   :<span class="timestamp"> {{ check_in }}</span></p>
+                <p>Check-out  :<span class="timestamp"> {{ check_out }}</span></p>
+                <p>Price <span class="item"> {{ price }}</span></p>
+                <p>Room <span class="item"> {{ room_id }}</span></p>
+                <p>Guest(s) <span class="item"> {{ guests }}</span></p>
+                <p>Message <span class="item"> {{ summary }}</span></p><br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

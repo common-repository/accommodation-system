@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 9, 2019, 11:06:21 AM
+    Author     : dop-mac1
+*/
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px){
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+.panel {
+  margin-bottom: 21px;
+  background-color: #ffffff;
+  /*border: 1px solid transparent;*/
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-body {
+  padding: 15px;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  color: inherit;
+  font-family: roboto;
+  font-weight: 400;
+}
+.panel-primary {
+  /*border-color: #2c3e50;*/
+	box-shadow: 0 1px 15px 1px rgba(113,106,202,.08);
+	-webkit-box-shadow: 0 1px 15px 1px rgba(113,106,202,.08);
+	-moz-box-shadow: 0 1px 15px 1px rgba(113,106,202,.08);
+}
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #37a057;
+  /*border-color: #2c3e50;*/
+}
